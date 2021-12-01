@@ -11,11 +11,13 @@
 
     <!-- Animate -->
 
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Fuentes -->
@@ -33,27 +35,247 @@
 <body>
     
     <!-- General -->
+        
+        <!-- Inicio de header -->
+            <header class="container-fluid">
 
 
-        <!-- Barra de navegación -->
-        <!-- Fin barra de navegacion -->
+                
+                <!-- Logo y redes -->
+
+                <nav class="d-flex justify-content-around align-items-center py-4 border-bottom border-1 headerLogo">
+                    <div>
+                        <a href="./index.html"><img src="/img/logo.svg" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div>
+                        <img src="./img/iconos/icoTelefono.svg" alt="ícono de teléfono" class="img-fluid pe-1">
+                        <span class="text-white pe-4">+54 9 2317 41-9839</span>
+                        <a href="https://www.facebook.com/Deshojando-Margaritas-134342159923804"><img src="./img/iconos/icoFacebook.svg" alt="ícono de Facebook" class="img-fluid pe-2"></a>
+                        <a href="https://www.instagram.com/dmargaritas.bsas/"><img src="./img/iconos/icoInstagram.svg" alt="ícono de Instagram" class="img-fluid pe-4"></a>
+                        <button type="button" class="btn btn-link rounded-pill text-white text-decoration-none px-5 py-1 buttonContacto"><i class="bi bi-whatsapp"><img src="./img/iconos/icoWhatsapp.svg" alt="ícono de Whatsapp" class="img-fluid pe-2"></i> Contáctanos </button>
+                    </div>
+                </nav>
+
+
+                <!-- Menú -->
+
+                <nav class="navbar navbar-expand-lg navbar-light fw-bold py-0 menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav align-items-center py-2">
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-white fw-normal active" aria-current="page" href="">Inicio</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-white fw-normal" href="./pages/catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-white fw-normal" href="#quienesSomos">Quienes somos</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-white fw-normal" href="">Contacto</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-white fw-normal" href="#preguntasFrecuentes">Preguntas Frecuentes</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+        <!-- Fin de header -->
+
 
 
         <!-- Cuerpo pagina -->
 
             <!-- Inicio Carrusel -->
+
+                <section>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./img/carrusel/img1.png" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block carousel-position text-start">
+                            <h1>Tocados</h1>
+                            <p>Diseño de Tocados disponibles en diferentes materiales y colores, contamos con un catálogo variado, entre nuestras variantes tenemos coronas, tiaras, apliques, cintas, horquillas, boutonnieres.</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./img/carrusel/img2.png" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block carousel-position text-start">
+                            <h1>Tocados</h1>
+                            <p>Diseño de Tocados disponibles en diferentes materiales y colores, contamos con un catálogo variado, entre nuestras variantes tenemos coronas, tiaras, apliques, cintas, horquillas, boutonnieres.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </section>
+
             <!-- Fin Carrusel -->
 
 
             <!-- Inicio Tocados y Accesorios -->
+
+                <section class="container mt-5 pt-5">
+                    <h2 class="text-center">Tocados y Accesorios destacados</h2>
+                    <div class="d-flex justify-content-around">
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/anilloRacimo.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Anillo Racimo</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/apliqueDaniela.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Aplique Daniela</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/arosAtenas.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Aros Atenas</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/brocheLyon.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Broche Lyon</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <!-- Inicio segunda fila de accesorios -->
+
+                    <div class="d-flex justify-content-around card-dos">
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/collarArya.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Collar Arya</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/dijeFlora.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Dije Flora</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/horquillas.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Horquillas</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card my-5 shadow bg-body rounded" style="width: 14rem;">
+                        <img src="./img/accesorios/pulseraGala.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-white">Pulsera Gala</h5>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href=""><button type="button" class="btn btn-link rounded-pill text-white text-decoration-none ps-4 pe-4 buttonContacto"> Contactanos </button></a>
+                            <a href="" class="text-reset text-decoration-none ms-2 card-ver"> Ver más > </a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
             <!-- Fin Tocados y Accesorios -->
 
 
+
             <!-- Inicio Quienes somos -->
+                <section id="quienesSomos" class="container mb-5 pb-5">
+                    <div class="row">
+                        <div class="col-5 rounded fondoQuienesSomos d-flex align-items-center">
+                            <div class="ps-4 pe-4">
+                                <p class="tituloQuienesSomos pb-2">Quienes Somos</p>
+                                <p class="textoQuienesSomos pb-4">Deshojando Margaritas se dedica a la confección de Tocados 
+                                    para Novias, quinceañeras y accesorios de forma personalizada, 
+                                    hecho a mano, teniendo en cuenta los gustos y 
+                                    peticiones de la clienta.  </p>
+                                <button type="button" class="btn ps-5 pe-5 rounded-pill btn-outline-light">Leer más</button>
+                            </div>
+                        </div>
+                        <div class="col-7 rounded text-end">
+                            <img class="img-fluid" src="./img/quienesSomos/collar.png" alt="Collar">
+                        </div>
+                    </div>
+                </section>
             <!-- Fin Quienes somos -->
 
 
+
             <!-- Inicio Iconos -->
+
+                <section class="container">
+                <div class="text-center justify-content-around">
+                    <div class="row row-cols-3">
+                        <div class="col-md-4 text-center">
+                            <img src="./img/iconos/icoEnvio.svg" alt="Envio" class="img-fluid pb-3">
+                            <h5 class="fw-bold">Envíos a todo el país</h5>
+                            <p class="text-dark">Te lo enviamos por correo dentro de Argentina</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="./img/iconos/icoWhatsappGrande.svg" alt="whatsapp" class="img-fluid pb-3">
+                            <h5 class="fw-bold">Contacto por Whatsapp</h5>
+                            <p class="text-dark">Respondemos tu consulta al instante</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="./img/iconos/icoGarantia.svg" alt="garantia" class="img-fluid pb-3">
+                            <h5 class="fw-bold">Te damos garantía</h5>
+                            <p class="text-dark">Por daños de fábrica te lo reponemos</p>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
             <!-- Fin Iconos -->
 
 
@@ -62,16 +284,196 @@
 
 
             <!-- Inicio Preguntas Frecuentes -->
+                <section id="preguntasFrecuentes" class="container my-5 py-5 text-center">
+                <h3>Preguntas Frecuentes</h3>
+                <div class="container my-4">
+                    <div class="row row-cols-2">
+                    <div class="col"> 
+
+                        <!-- Columna de 1 a 4 -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    ¿Cómo puedo cuidar mis tocados y accesorios?
+                                </button>
+                                </h4>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-start">
+                                    <p>Evita utilizar las joyas durante los quehaceres domésticos, la limpieza de vehículos, piscinas o cualquier situación similar.</p>
+
+                                    <p> Evita el contacto de la joya con agua o sustancias que contengan productos químicos, porque pueden mancharla, opacarla u oxidarla (perfumes, cremas, tinturas, spray para cabello, detergentes, limón, jabón, ácido mercurio).</p>
+
+                                    <p>No bañarse con la joya, puedes limpiarla con un paño seco y suave. Guarda en un lugar seco, en estuches individuales para evitar que se rayen unos con otros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    ¿Qué formas de pago puedo aprovechar para realizar mi compra?
+                                </button>
+                                </h4>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-start">Podés abonar con efectivo, transferencia bancaria o tarjeta de crédito a través de la plataforma de Mercado Pago.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    ¿Cómo realizo la compra?
+                                </button>
+                                </h4>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-start">Nos envías un chat por WhatsApp, elegís los colores del accesorio que deseas y te lo cotizamos.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    ¿Cuál es el costo de envío?
+                                </button>
+                                </h4>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-start">El costo del envío va a depender de la distancia a la que se debe enviar el pedido.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"> 
+
+
+                        <!-- Columna de 5 a 8 -->
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                ¿Dónde puedo recibir mi pedido?
+                            </button>
+                            </h4>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-start">Podés recibir tu pedido en tu casa o en una sucursal del Correo Argentino.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                ¿Cómo se realizan los envíos?
+                            </button>
+                            </h4>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-start">Los envíos los hacemos por Correo Argentino, moto mensajería en CABA o retiro en Showroom.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                ¿Cuál es la política de cambio y devolución?
+                            </button>
+                            </h4>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-start">Los cambios se realizan solo por defectos de fabricación o del material.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                ¿Cuánto tarda en llegar el pedido?
+                            </button>
+                            </h4>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-start">El tiempo que demora en llegar tu pedido depende de la distancia, una vez que haces la reserva, comenzamos a armar tu pedido y a la brevedad lo despachamos.</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                
             <!-- Fin Preguntas Frecuentes -->
 
         <!-- Fin del cuerpo -->
 
 
+
         <!-- Pie de página -->
+            <footer class="container-fluid d-flex align-items-center justify-content-center" id="pie">
+                <div class="container row pt-5 pb-5">
+
+                    <div class="col-3 textoContactos">
+                        <div class="py-1">
+                            <img height="80px" src="/img/logo.svg" alt="logo">
+                        </div>
+                        <div class="pb-2 mt-5">
+                            <i><img src="./img/iconos/icoCarta.svg" alt="ícono de Correo" class="img-fluid pe-2"></i>
+                            <span class="text-white pe-4">monicabiancucci@gmail.com</span>
+                        </div>
+                        <div>
+                            <i><img src="./img/iconos/icoTelefono.svg" alt="ícono de Telefono" class="img-fluid pe-2"></i>
+                            <span class="text-white pe-4">+54 9 2317 41-9839</span>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <p class="textoVerde">CATEGORIAS</p>
+                        <div>
+                            <a class="linksFooter" href="#">Inicio</a><br>
+                            <a class="linksFooter" href="#">Cátalogo</a><br>
+                            <a class="linksFooter" href="#">Quienes somos</a><br>
+                            <a class="linksFooter" href="#">Contacto</a><br>
+                            <a class="linksFooter" href="#">Preguntas frecuentes</a>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <p class="textoVerde">TOCADOS</p>
+                        <div>
+                            <a class="linksFooter" href="">Coronas</a><br>
+                            <a class="linksFooter" href="">Tiaras</a><br>
+                            <a class="linksFooter" href="">Apliques</a><br>
+                            <a class="linksFooter" href="">Cintas</a><br>
+                            <a class="linksFooter" href="">Horquillas</a><br>
+                            <a class="linksFooter" href="">Boutonnieres</a><br>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <p class="textoVerde">ACCESORIOS</p>
+                        <div>
+                            <a class="linksFooter" href="">Pecheras</a><br>
+                            <a class="linksFooter" href="">Collares</a><br>
+                            <a class="linksFooter" href="">Aros</a><br>
+                            <a class="linksFooter" href="">Anillos</a><br>
+                            <a class="linksFooter" href="">Pulseras</a><br>
+                            <a class="linksFooter" href="">Broches</a><br>
+                        </div>
+                    </div>
+
+                    <div class="col-3 text-center">
+                        <p class="textoBlanco">NUESTRAS REDES</p>
+                        <div class="pb-4">
+                            <a href="https://www.facebook.com/Deshojando-Margaritas-134342159923804"><img src="./img/iconos/icoFacebook.svg" alt="ícono de Facebook" class="img-fluid pe-2"></a>
+                            <a href="https://www.instagram.com/dmargaritas.bsas/"><img src="./img/iconos/icoInstagram.svg" alt="ícono de Instagram" class="img-fluid pe-4"></a>
+                        </div>
+                        <button type="button" class="btn btn-link rounded-pill text-white text-decoration-none px-5 py-1 buttonContacto"><i class="bi bi-whatsapp"><img src="./img/iconos/icoWhatsapp.svg" alt="ícono de Whatsapp" class="img-fluid pe-2"></i> Contáctanos </button>
+
+                    </div>
+
+
+
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+
+                </div>
+            </footer>
         <!-- Fin del pie -->
 
-
-        <!-- Fin general -->
+    <!-- Fin general -->
 
 
     <!-- Boostrap -->

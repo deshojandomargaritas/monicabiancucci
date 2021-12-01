@@ -1,0 +1,133 @@
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* General */
+/* Fin general */
+/* Barra de navegación */
+header {
+  background-color: #101E5A;
+  margin-right: 0px !important;
+}
+
+header .buttonContacto {
+  background-color: #4CAF50;
+}
+
+.menu a {
+  border-bottom: solid 4px #101E5A;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.menu a:hover {
+  color: #4CAF50 !important;
+  border-bottom: solid 4px #4CAF50;
+}
+
+/* Fin barra de navegacion */
+/* Inicio Carrusel */
+.carousel {
+  height: 550px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 140px;
+  left: -880px;
+}
+
+.carousel-position {
+  position: relative;
+  top: -320px;
+}
+
+.carousel-caption {
+  width: 500px;
+}
+
+.carousel-caption h1 {
+  color: #4CAF50;
+}
+
+.carousel-button {
+  position: absolute;
+  top: -120px;
+}
+
+/* Fin Carrusel */
+/* Inicio Tocados y Accesorios */
+.card .card-title {
+  font-size: 12px;
+  position: absolute;
+  top: 175px;
+  font-size: 16px;
+}
+
+.card .btn {
+  background-color: #4CAF50;
+  font-size: 10px;
+}
+
+.card .card-ver {
+  font-size: 12px;
+}
+
+.card-dos {
+  position: relative;
+  top: -80px;
+}
+
+/* Fin Tocados y Accesorios */
+/* Inicio Quienes somos */
+.fondoQuienesSomos {
+  background-color: #101E5A;
+}
+
+.tituloQuienesSomos {
+  color: #4CAF50;
+  font-size: 25pt;
+  font-weight: 700;
+}
+
+.textoQuienesSomos {
+  font-size: 14pt;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+/* Fin Quienes somos */
+/* Inicio Iconos */
+/* Fin Iconos */
+/* Inicio Contacto */
+/* Fin Contacto */
+/* Inicio Preguntas Frecuentes */
+/* Fin Preguntas Frecuentes */
+/* Pie de página */
+#pie {
+  background-color: #101E5A;
+  font-size: 14px;
+}
+
+footer .textoBlanco {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+footer .textoVerde {
+  color: #4CAF50;
+  font-weight: 700;
+}
+
+footer .linksFooter {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer .buttonContacto {
+  background-color: #4CAF50;
+}
+
+/* Fin del pie */
+/*# sourceMappingURL=style.css.map */
