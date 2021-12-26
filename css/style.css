@@ -3,8 +3,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #E5E5E5; }
 
-/* General */
-/* Fin general */
 /* Barra de navegación */
 header {
   background-color: #101E5A;
@@ -16,6 +14,7 @@ header {
   position: fixed; }
 
 .menu a {
+  font-size: 12pt;
   border-bottom: solid 4px #101E5A;
   transition: all 0.3s ease-out; }
   .menu a:hover {
@@ -24,6 +23,14 @@ header {
 
 /* Fin barra de navegacion */
 /* Inicio Carrusel */
+@media screen and (max-width: 1440px) {
+  .carousel {
+    height: 550px; } }
+
+@media screen and (min-width: 1440px) {
+  .carousel {
+    height: 750px; } }
+
 .carousel-indicators {
   position: absolute;
   top: 140px;
@@ -54,14 +61,15 @@ header {
   background-color: #4CAF50;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
-  font-size: 25px;
   z-index: 100; }
+  .btn-flotante .bi-whatsapp {
+    color: white;
+    font-size: 25px; }
 
 .btn-flotante:hover {
   background-color: white; }
-
-.bi:hover {
-  color: #4CAF50 !important; }
+  .btn-flotante:hover .bi-whatsapp {
+    color: #4CAF50 !important; }
 
 /* Fin Carrusel */
 /* Inicio Tocados y Accesorios */
@@ -128,12 +136,6 @@ header {
   color: #FFFFFF; }
 
 /* Fin Quienes somos */
-/* Inicio Iconos */
-/* Fin Iconos */
-/* Inicio Contacto */
-/* Fin Contacto */
-/* Inicio Preguntas Frecuentes */
-/* Fin Preguntas Frecuentes */
 /* Inicio Catalogo */
 .linksCatalogo {
   text-decoration: none;

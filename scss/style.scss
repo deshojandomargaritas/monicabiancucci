@@ -10,10 +10,6 @@ body{
     background-color: $fondo;
 }
 
-/* General */
-/* Fin general */
-
-
 /* Barra de navegación */
 header{
     background-color: $azulOscuro;
@@ -29,6 +25,7 @@ header{
 
 .menu{
     a{ 
+        font-size: 12pt;
         border-bottom: solid 4px $azulOscuro;
         transition: all 0.3s ease-out;
         &:hover{
@@ -42,6 +39,20 @@ header{
 
 
 /* Inicio Carrusel */
+
+@media screen and (max-width: 1440px){
+    .carousel{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .carousel{
+        height: 750px;
+    }
+}
+
+
 .carousel{
     &-indicators{
         position: absolute;
@@ -77,16 +88,18 @@ header{
     background-color: $verde;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
     border-radius: 50px;
-    font-size: 25px;
     z-index: 100;
+    .bi-whatsapp{
+        color:white;
+        font-size: 25px;
+    }
 }
 
 .btn-flotante:hover{
     background-color: white;
-}
-
-.bi:hover{
-    color: $verde !important;
+    .bi-whatsapp{
+    color: #4CAF50 !important;
+    }
 }
 
 /* Fin Carrusel */
@@ -174,17 +187,6 @@ header{
 
 /* Fin Quienes somos */
 
-
-/* Inicio Iconos */
-/* Fin Iconos */
-
-
-/* Inicio Contacto */
-/* Fin Contacto */
-
-
-/* Inicio Preguntas Frecuentes */
-/* Fin Preguntas Frecuentes */
 
 /* Inicio Catalogo */
 
