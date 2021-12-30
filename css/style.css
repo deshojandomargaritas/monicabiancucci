@@ -65,10 +65,15 @@ header {
   .btn-flotante .bi-whatsapp {
     color: white;
     font-size: 25px; }
+  .btn-flotante .bi-arrow-up-short {
+    color: white;
+    font-size: 25px; }
 
 .btn-flotante:hover {
   background-color: white; }
   .btn-flotante:hover .bi-whatsapp {
+    color: #4CAF50 !important; }
+  .btn-flotante:hover .bi-arrow-up-short {
     color: #4CAF50 !important; }
 
 /* Fin Carrusel */
