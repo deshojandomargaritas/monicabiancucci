@@ -160,6 +160,9 @@ header {
   background-color: #101E5A;
   font-size: 14pt; }
 
+footer .letraChica {
+  font-size: 10pt; }
+
 footer .textoBlanco {
   color: #FFFFFF;
   font-weight: 700; }
